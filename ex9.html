@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script type="text/javascript">
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script type="text/javascript">
+      function Oneplusone(){
+              document.write(1+1+'<br>');
+      }
+      Oneplusone();
+      function Sum(left,right){
+        document.write(left+right+'<br>');
+      }
+      Sum(100,30);
+      Sum(39,20);
+      function sum2(left,right){
+        return left+right;
+      }
+      document.write(sum2(3,5)+'<br>');
+      document.write('<div style= "color:orange">'+sum2(100,200)+'</div>');
+      document.write('<div style= "font-size:3rem">'+sum2(10,200)+'</div>');
+    </script>
+    <h2>Return</h2>
+  </body>
+</html>
