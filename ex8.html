@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
+    <script type="text/javascript">
+      var coworkers=["sujin","minsu","sungsuk","younghwan"];
+    </script>
+    <h2>Co workers</h2>
+    <!-- li 목록으로 저장한 것들을 배열로 저장한것들을 보여줌
+    <ul>
+      <li>sujin</li>
+      <li>minsu</li>
+      <li>sungsuk</li>
+      <li>younghwan</li>
+    </ul>
+    -->
+    <ul>
+      <script type="text/javascript">
+        var i=0; // 배열 index로 들어가는 것은 초기화 시켜줘야함
+        while(i< coworkers.length){ // 배열 index를 추가할수도있으므로 숫자로 하지말고 length 를 사용하
+          document.write('<li>'+coworkers[i]+'</li>');
+          i = i+1; // index값을 하나씩올려서 배열 모두를 출력시킬수 있게해야함
+        }
+      </script>
+    </ul>
+  </body>
+</html>

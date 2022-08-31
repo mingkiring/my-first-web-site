@@ -1,27 +1,67 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>WEB1-JavaScirpt</title>
-    <meta charset ="utf-8">
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .js{
+        font-weight:bold;
+        color:red;
+      }
+      #first{
+        color:green;
+      }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <div id="grid">
-      <ol>
-        <li><a href="1.html"> HTML</a> </li>
-        <li><a href="2.html"> CSS </a></li>
-        <li><a href="3.html"> JavaScirpt</a></li>
-      </ol>
-    <div id="article">
-      <h2> JavaScirpt </h2>
-      <p>
-        JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
-      </p>
-    </div>
-  </div>
-  </body>
-  </html>
-</p>
+    <!--
+    <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
+    <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black'">
+    -->
+    <input  type="button" value="night" onclick="
+    <!-- document.querySelector('body')태그를 target 변수에 할당하는 방법으로 중복을 줄임 -->
+      var target=document.querySelector('body');
+      if(this.value==='night'){
+        target.style.backgroundColor='black'; target.style.color='white';
+        this.value='day';
+
+        var alist= document.querySelectorAll('a');
+        var i =0 ;
+        while(i<alist.length){
+          alist[i].style.color='powderblue';
+          i = i+1;
+        }
+      }else{
+        target.style.backgroundColor='white'; target.style.color='black';
+        this.value='night';
+
+        var alist= document.querySelectorAll('a');
+        var i =0 ;
+        while(i<alist.length){
+          alist[i].style.color='orange';
+          i = i+1;
+        }
+      }
+    ">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JAVASCRIPT</a></li>
+    </ol>
+    <h2 style="background-color:skyblue; color:orange">Javascript란 무엇일까?</h2>
+    <p>
+      <span id="first" class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, <span class="js">JavaScript</span> is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in <span class="js">JavaScript</span> engine. Each of the many <span class="js">JavaScript</span> engines represent a different implementation of <span class="js">JavaScript</span>, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+    </p>
+    <input type="button" value="night" onclick="
+      var target=document.querySelector('body');
+      if(this.value==='night'){
+        target.style.backgroundColor='black'; target.style.color='white';
+        this.value='day';
+      }else{
+        target.style.backgroundColor='white'; target.style.color='black';
+        this.value='night';
+      }
+    ">
   </body>
 </html>
